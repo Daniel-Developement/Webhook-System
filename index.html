@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt_BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/css/toastr.css">
+    <title>Leinad Discord</title>
+</head>
+
+<body>
+    <section id="app">
+        <div class="container d-flex justify-content-center align-items-center" style="height: 100vh;">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="card">
+                        <div class="card-header">
+                            <h1>Envie seu mensagem</h1>
+                        </div>
+                        <div class="card-body">
+                            <div class="form-group">
+                                <label for="">Author</label>
+                                <input type="text" id="author_content" class="form-control">
+                            </div>
+                            <div class="form-group">
+                                <label for="">Avatar (URL)</label>
+                                <input type="text" id="avatar_content" class="form-control">
+                            </div>
+                            <div class="form-group">
+                                <label for="">Message</label>
+                                <textarea class="form-control" id="message_content" cols="30" rows="10"></textarea>
+                            </div>
+                        </div>
+                        <div class="card-footer">
+                            <button type="button" class="btn btn-primary form-control" @click.prevent="sendMessage()">Enviar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="./assets/js/jquery.min.js"></script>
+    <script src="./assets/js/popper.min.js"></script>
+    <script src="./assets/js/bootstrap.min.js"></script>
+    <script src="./assets/js/toastr.min.js"></script>
+    <script src="./assets/js/vue.js"></script>
+    <script src="./assets/js/script.js"></script>
+</body>
+
+</html>
